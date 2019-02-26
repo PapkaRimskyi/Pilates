@@ -1,0 +1,22 @@
+.pilates-header {
+  margin-bottom: 53px;
+  width: $mobile-width;
+  background-image: url("../img/pilates-headerBGcircle320px.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .pilates-header {
+    width: $tablet-width;
+    background-image: url("../img/pilates-headerBGcircle764px.png");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pilates-header {
+    width: 100%;
+    max-width: $desktop-width;
+    background-image: url("../img/pilates-headerBGcircle1366px.png")
+  }
+}

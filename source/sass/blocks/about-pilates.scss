@@ -1,0 +1,135 @@
+.about-pilates {
+  margin: $margin-auto;
+  padding-bottom: 173px;
+  width: $mobile-container-width;
+  background-image: url("../img/about-pilatesBG1photo320px.png"), url("../img/about-pilatesBG2photo320px.png");
+  background-position: 8px 261px, 94px 186px;
+  background-repeat: no-repeat;
+}
+
+.about-pilates__headline {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 28px;
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.about-pilates__headline::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 0;
+  width: 17px;
+  height: 1px;
+  background-color: $black-color;
+}
+
+.about-pilates__text {
+  margin-top: 0;
+  margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+.about-pilates__text--margin-bottom {
+  margin-bottom: 30px;
+}
+
+.about-pilates__more-link {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: #2a4f37;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.about-pilates__more-link-text {
+  margin-right: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-pilates {
+    margin: $margin-auto;
+    padding-bottom: 173px;
+    width: $tablet-container-width;
+    background-image: url("../img/about-pilatesBG1photo764px.png"), url("../img/about-pilatesBG2photo764px.png");
+    background-position: 221px 241px, 335px 89px;
+  }
+
+  .about-pilates__container {
+    width: 318px;
+  }
+
+  .about-pilates__headline {
+    margin-bottom: 41px;
+    padding-left: 55px;
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  .about-pilates__headline::before {
+    top: 10px;
+    width: 37px;
+    height: 2px;
+  }
+
+  .about-pilates__text {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .about-pilates__text--margin-bottom {
+    margin-bottom: 50px;
+  }
+
+  .about-pilates__more-link {
+    font-size: 14px;
+    line-height: 14px;
+    width: 124px;
+    letter-spacing: 2.5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-pilates {
+    padding-bottom: 338px;
+    width: $desktop-container-width;
+    background-image: url("../img/about-pilatesBG1photo1366px.png"), url("../img/about-pilatesBG3photo1366px.png"), url("../img/about-pilatesBGDot.png");
+    background-position: 335px 332px, 569px 20px, 452px 218px;
+  }
+
+  .about-pilates__container {
+    margin-left: 27px;
+    width: 390px;
+  }
+
+  .about-pilates__headline {
+    margin-bottom: 57px;
+    padding-left: 55px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .about-pilates__headline::before {
+    top: 24px;
+  }
+
+  .about-pilates__text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .about-pilates__text--margin-bottom {
+    margin-bottom: 41px;
+  }
+}
