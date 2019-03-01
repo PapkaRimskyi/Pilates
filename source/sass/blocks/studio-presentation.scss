@@ -1,21 +1,7 @@
 .studio-presentation {
-  position: relative;
   margin: $margin-auto;
   padding-bottom: 202px;
   width: $mobile-container-width;
-  z-index: 1;
-}
-
-.studio-presentation::after {
-  position: absolute;
-  content: "";
-  right: -74px;
-  top: 2px;
-  width: 308px;
-  height: 318px;
-  background-image: url("../img/strudio-presentationAbsolute320px.png");
-  background-repeat: no-repeat;
-  z-index: -1;
 }
 
 .studio-presentation__headline {
@@ -59,14 +45,6 @@
     width: $tablet-container-width;
   }
 
-  .studio-presentation::after {
-    right: -126px;
-    top: -135px;
-    width: 764px;
-    height: 630px;
-    background-image: url("../img/strudio-presentationAbsolute764px.png");
-  }
-
   .studio-presentation__headline {
     margin-bottom: 41px;
     width: 268px;
@@ -106,15 +84,6 @@
   .studio-presentation {
     padding-bottom: 338px;
     width: 1164px;
-  }
-
-  .studio-presentation::after {
-    right: -101px;
-    top: -176px;
-    width: 994px;
-    height: 776px;
-    background-image: url("../img/strudio-presentationAbsolute1366px.png"), url("../img/header-navCircle3BG1366px.png");
-    background-position: 0 0, 385px 145px;
   }
 
   .studio-presentation__headline {

@@ -1,0 +1,302 @@
+.schedule-and-cost {
+  margin: $margin-auto;
+  margin-bottom: 47px;
+  width: $mobile-container-width;
+}
+
+.schedule-and-cost__headline {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 28px;
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.4px;
+}
+
+.schedule-and-cost__headline::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 0;
+  width: 17px;
+  height: 1px;
+  background-color: $black-color;
+}
+
+.schedule-and-cost__cell {
+  position: relative;
+  margin: $margin-auto;
+  margin-bottom: 20px;
+  width: 244px;
+}
+
+.schedule-and-cost__cell--01 {
+  background-color: rgba(156, 178, 105, 0.5);
+}
+
+.schedule-and-cost__cell--02 {
+  background-color: rgba(156, 178, 105, 0.7);
+}
+
+.schedule-and-cost__cell--03 {
+  background-color: rgba(156, 178, 105, 1);
+}
+
+.schedule-and-cost__cell--01::before,
+.schedule-and-cost__cell--02::before,
+.schedule-and-cost__cell--03::before {
+  position: absolute;
+  content: "01";
+  top: 24px;
+  left: 64px;
+  width: 127px;
+  height: 105px;
+  font-family: $SFUIText-family;
+  font-size: 115px;
+  font-weight: 700;
+  line-height: 115px;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.schedule-and-cost__cell--02::before {
+  content: "02";
+  top: 25px;
+  left: 57px;
+  width: 150px;
+  height: 105px;
+}
+
+.schedule-and-cost__cell--03::before {
+  content: "03";
+  top: 25px;
+  left: 57px;
+  width: 150px;
+  height: 105px;
+}
+
+.schedule-and-cost__info-container {
+  margin: $margin-auto;
+  padding-top: 101px;
+  padding-bottom: 41px;
+  width: 150px;
+}
+
+.schedule-and-cost__info-container--padding-right-bottom {
+  padding-right: 7px;
+  padding-bottom: 42px;
+}
+
+.schedule-and-cost__lvl {
+  margin-top: 0;
+  margin-bottom: 13px;
+  width: 96px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: $white-color;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.schedule-and-cost__lvl--font-size {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.schedule-and-cost__cost-per-lesson {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-family: $SFUIText-family;
+  font-size: 15.6px;
+  font-weight: 700;
+  color: $white-color;
+}
+
+.schedule-and-cost__table {
+  margin-bottom: 20px;
+  width: 136px;
+  font-family: $SFUIText-family;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+  color: $white-color;
+}
+
+.schedule-and-cost__table-data {
+  padding-bottom: 6px;
+}
+
+.schedule-and-cost__sign-up {
+  position: relative;
+  padding: 6px 0 6px 0;
+  width: 127px;
+  display: flex;
+  justify-content: center;
+  font-family: $SFUIText-family;
+  font-size: 13.3px;
+  font-weight: 500;
+  line-height: 14px;
+  text-decoration: none;
+  color: $white-color;
+  border: 2px solid $white-color;
+  border-radius: 15px;
+}
+
+.schedule-and-cost__sign-up-arrow {
+  position: absolute;
+  top: 8px;
+  right: -20px;
+}
+
+@media (min-width: $tablet-width) {
+  .schedule-and-cost {
+    margin-bottom: 75px;
+    width: $tablet-container-width;
+  }
+
+  .schedule-and-cost__headline {
+    margin-bottom: 46px;
+    padding-left: 54px;
+    font-size: 24.7px;
+    line-height: 24.7px;
+  }
+
+  .schedule-and-cost__headline::before {
+    top: 11px;
+    width: 37px;
+    height: 2px;
+  }
+
+  .schedule-and-cost__cell-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .schedule-and-cost__cell {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 206px;
+  }
+
+  .schedule-and-cost__cell:nth-child(3n + 2) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .schedule-and-cost__cell--01::before {
+    left: 40px;
+  }
+
+  .schedule-and-cost__cell--02::before,
+  .schedule-and-cost__cell--03::before {
+    top: 23px;
+    left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .schedule-and-cost {
+    margin-bottom: 119px;
+    width: 100%;
+    max-width: $desktop-width;
+  }
+
+  .schedule-and-cost__headline {
+    margin-bottom: 63px;
+    padding-left: 155px;
+    font-size: 48.5px;
+    line-height: 48.5px;
+  }
+
+  .schedule-and-cost__headline::before {
+    top: 23px;
+    left: 100px;
+  }
+
+  .schedule-and-cost__cell {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 376px;
+  }
+
+  .schedule-and-cost__cell:nth-child(3n + 2) {
+    margin-right: 19px;
+    margin-left: 19px;
+  }
+
+  .schedule-and-cost__cell--01::before,
+  .schedule-and-cost__cell--02::before,
+  .schedule-and-cost__cell--03::before {
+    width: 230px;
+    height: 190px;
+    font-size: 209px;
+    line-height: 210px;
+  }
+
+  .schedule-and-cost__cell--01::before {
+    top: 58px;
+    left: 94px;
+  }
+
+  .schedule-and-cost__cell--02::before,
+  .schedule-and-cost__cell--03::before {
+    top: 56px;
+    left: 58px;
+    width: 272px;
+  }
+
+  .schedule-and-cost__info-container {
+    padding-top: 188px;
+    padding-bottom: 94px;
+    width: 235px;
+  }
+
+  .schedule-and-cost__lvl {
+    margin-bottom: 26px;
+    width: 156px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .schedule-and-cost__lvl--font-size {
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 2.5px;
+  }
+
+  .schedule-and-cost__cost-per-lesson {
+    margin-bottom: 28px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .schedule-and-cost__table {
+    margin-bottom: 26px;
+    width: 190px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .schedule-and-cost__table-data {
+    padding-bottom: 14px;
+  }
+
+  .schedule-and-cost__day {
+    margin-right: 13px;
+  }
+
+  .schedule-and-cost__sign-up {
+    padding: 17px 0 17px 0;
+    width: 233px;
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 27px;
+  }
+
+  .schedule-and-cost__sign-up-arrow {
+    top: 21px;
+  }
+}

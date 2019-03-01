@@ -1,0 +1,314 @@
+.how-are-the-classes {
+  margin: 0 auto;
+  width: $mobile-container-width;
+}
+
+.how-are-the-classes__headline {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 28px;
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.how-are-the-classes__headline::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 0;
+  width: 17px;
+  height: 1px;
+  background-color: $black-color;
+}
+
+.how-are-the-classes__item {
+  position: relative;
+  margin-bottom: 62px;
+}
+
+.how-are-the-classes__item--posAbs1::before,
+.how-are-the-classes__item--posAbs2::before,
+.how-are-the-classes__item--posAbs3::before,
+.how-are-the-classes__item--posAbs4::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.how-are-the-classes__item--posAbs1::before {
+  top: 25px;
+  left: 43px;
+  width: 203px;
+  height: 256px;
+  background-image: url("../img/how-are-the-classes__item--bg1__320px.png");
+}
+
+.how-are-the-classes__item--posAbs2::before {
+  top: -47px;
+  left: 23px;
+  width: 235px;
+  height: 337px;
+  background-image: url("../img/how-are-the-classes__item--bg2__320px.png");
+}
+
+.how-are-the-classes__item--posAbs3::before {
+  top: 64px;
+  left: 8px;
+  width: 259px;
+  height: 226px;
+  background-image: url("../img/how-are-the-classes__item--bg3__320px.png");
+}
+
+.how-are-the-classes__item--posAbs4::before {
+  top: 72px;
+  left: -14px;
+  width: 319px;
+  height: 226px;
+  background-image: url("../img/how-are-the-classes__item--bg4__320px.png");
+}
+
+.how-are-the-classes__item-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.how-are-the-classes__item-headline {
+  margin-top: 0;
+  margin-bottom: 275px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.how-are-the-classes__item--posAbs2 .how-are-the-classes__item-headline--margin-bottom {
+  margin-bottom: 295px;
+}
+
+.how-are-the-classes__item--posAbs3 .how-are-the-classes__item-headline--margin-bottom {
+  margin-bottom: 303px;
+}
+
+.how-are-the-classes__item--posAbs4 .how-are-the-classes__item-headline--margin-bottom {
+  margin-bottom: 307px;
+}
+
+.how-are-the-classes__item-description {
+  margin-top: 0;
+  font-family: $SFUIText-family;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .how-are-the-classes {
+    margin: 0 auto;
+    width: $tablet-container-width;
+  }
+
+  .how-are-the-classes__headline {
+    margin-bottom: 91px;
+    padding-left: 52px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .how-are-the-classes__headline::before {
+    top: 15px;
+    width: 37px;
+    height: 2px;
+  }
+
+  .how-are-the-classes__item {
+    margin: 0 auto;
+    margin-bottom: 203px;
+    margin-left: 54px;
+  }
+
+  .how-are-the-classes__item--posAbs2 {
+    margin-bottom: 224px;
+  }
+
+  .how-are-the-classes__item--posAbs2,
+  .how-are-the-classes__item--posAbs4 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .how-are-the-classes__item--posAbs3 {
+    margin-bottom: 181px;
+    margin-left: 28px;
+  }
+
+  .how-are-the-classes__item--posAbs1::before {
+    top: -119px;
+    left: 322px;
+    width: 231px;
+    height: 321px;
+    background-image: url("../img/how-are-the-classes__item--bg1__764px.png");
+  }
+
+  .how-are-the-classes__item--posAbs2::before {
+    top: -157px;
+    left: -7px;
+    width: 235px;
+    height: 372px;
+    background-image: url("../img/how-are-the-classes__item--bg2__764px.png");
+  }
+
+  .how-are-the-classes__item--posAbs3::before {
+    top: -37px;
+    left: 263px;
+    width: 294px;
+    height: 234px;
+    background-image: url("../img/how-are-the-classes__item--bg3__764px.png");
+  }
+
+  .how-are-the-classes__item--posAbs4::before {
+    top: -51px;
+    left: -85px;
+    width: 391px;
+    height: 258px;
+    background-image: url("../img/how-are-the-classes__item--bg4__764px.png");
+  }
+
+  .how-are-the-classes__item-container {
+    width: 320px;
+    justify-content: flex-start;
+  }
+
+  .how-are-the-classes__item--posAbs2 .how-are-the-classes__item-container {
+    width: 295px;
+  }
+
+  .how-are-the-classes__item--posAbs3 .how-are-the-classes__item-container {
+    width: 260px;
+  }
+
+  .how-are-the-classes__item--posAbs4 .how-are-the-classes__item-container {
+    width: 298px;
+  }
+
+  .how-are-the-classes__item-headline {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .how-are-the-classes__item-headline,
+  .how-are-the-classes__item--posAbs2 .how-are-the-classes__item-headline--margin-bottom,
+  .how-are-the-classes__item--posAbs3 .how-are-the-classes__item-headline--margin-bottom,
+  .how-are-the-classes__item--posAbs4 .how-are-the-classes__item-headline--margin-bottom {
+    margin-bottom: 31px;
+  }
+
+  .how-are-the-classes__item-description {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how-are-the-classes {
+    width: 100%;
+    max-width: 1160px;
+  }
+
+  .how-are-the-classes__headline {
+    margin-bottom: 213px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .how-are-the-classes__headline::before {
+    top: 28px;
+    left: -2px;
+  }
+
+  .how-are-the-classes__item {
+    margin-bottom: 423px;
+    margin-left: 92px;
+  }
+
+  .how-are-the-classes__item--posAbs1::before {
+    top: -275px;
+    left: 481px;
+    width: 423px;
+    height: 548px;
+    background-image: url("../img/how-are-the-classes__item--bg1__1366px.png");
+  }
+
+  .how-are-the-classes__item--posAbs2::before {
+    top: -314px;
+    left: 12px;
+    width: 462px;
+    height: 650px;
+    background-image: url("../img/how-are-the-classes__item--bg2__1366px.png");
+  }
+
+  .how-are-the-classes__item--posAbs3::before {
+    top: -115px;
+    left: 411px;
+    width: 496px;
+    height: 417px;
+    background-image: url("../img/how-are-the-classes__item--bg3__1366px.png");
+  }
+
+  .how-are-the-classes__item--posAbs4::before {
+    top: -147px;
+    left: -49px;
+    width: 671px;
+    height: 482px;
+    background-image: url("../img/how-are-the-classes__item--bg4__1366px.png");
+  }
+
+  .how-are-the-classes__item-container {
+    width: 445px;
+  }
+
+  .how-are-the-classes__item--posAbs2 {
+    margin-bottom: 442px;
+  }
+
+  .how-are-the-classes__item--posAbs3 {
+    margin-bottom: 461px;
+  }
+
+  .how-are-the-classes__item--posAbs2 .how-are-the-classes__item-container {
+    margin-right: 24px;
+    width: 445px;
+  }
+
+  .how-are-the-classes__item--posAbs3 .how-are-the-classes__item-container {
+    width: 375px;
+  }
+
+  .how-are-the-classes__item--posAbs4 .how-are-the-classes__item-container {
+    width: 435px;
+  }
+
+  .how-are-the-classes__item-headline {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .how-are-the-classes__item-headline,
+  .how-are-the-classes__item--posAbs2 .how-are-the-classes__item-headline--margin-bottom,
+  .how-are-the-classes__item--posAbs3 .how-are-the-classes__item-headline--margin-bottom,
+  .how-are-the-classes__item--posAbs4 .how-are-the-classes__item-headline--margin-bottom {
+    margin-bottom: 24px;
+  }
+
+  .how-are-the-classes__item-description {
+    line-height: 24px;
+  }
+
+  .how-are-the-classes__item--posAbs4 .how-are-the-classes__item-description {
+    width: 360px;
+  }
+}

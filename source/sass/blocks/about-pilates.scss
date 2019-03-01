@@ -1,5 +1,6 @@
 .about-pilates {
   margin: $margin-auto;
+  margin-bottom: 44px;
   padding-bottom: 173px;
   width: $mobile-container-width;
   background-image: url("../img/about-pilatesBG1photo320px.png"), url("../img/about-pilatesBG2photo320px.png");
@@ -58,6 +59,7 @@
 @media (min-width: $tablet-width) {
   .about-pilates {
     margin: $margin-auto;
+    margin-bottom: 30px;
     padding-bottom: 173px;
     width: $tablet-container-width;
     background-image: url("../img/about-pilatesBG1photo764px.png"), url("../img/about-pilatesBG2photo764px.png");
@@ -101,6 +103,7 @@
 
 @media (min-width: $desktop-width) {
   .about-pilates {
+    margin-bottom: 179px;
     padding-bottom: 338px;
     width: $desktop-container-width;
     background-image: url("../img/about-pilatesBG1photo1366px.png"), url("../img/about-pilatesBG3photo1366px.png"), url("../img/about-pilatesBGDot.png");
