@@ -1,6 +1,6 @@
 .reviews {
   margin: $margin-auto;
-  margin-bottom: 30px;
+  margin-bottom: 64px;
   width: $mobile-container-width;
 }
 
@@ -137,6 +137,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
+    margin-bottom: 85px;
     width: $tablet-container-width;
   }
 
@@ -171,6 +172,7 @@
 
   .reviews__review-section {
     padding-top: 21px;
+    padding-bottom: 39px;
     width: 494px;
     justify-content: space-between;
     flex-direction: row;
@@ -212,6 +214,7 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    margin-bottom: 127px;
     width: 100%;
     max-width: 1165px;
   }

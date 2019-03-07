@@ -1,0 +1,218 @@
+.contacts__headline {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 22px;
+  padding-left: 41px;
+  font-size: 17.4px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.contacts__headline::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 15px;
+  width: 17px;
+  height: 1px;
+  background-color: $black-color;
+}
+
+.contacts__communication-methods {
+  margin-bottom: 50px;
+  padding-left: 36px;
+}
+
+.contacts__communication-methods-list {
+  margin: 0;
+  padding: 0;
+  width: 146px;
+  list-style-type: none;
+}
+
+.contacts__communication-methods-item {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__communication-methods-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.contacts__communication-methods-item--margin {
+  margin-bottom: 16px;
+}
+
+.contacts__communication-methods-link {
+  font-family: $SFUIText-family;
+  font-size: 13.5px;
+  font-weight: 300;
+  line-height: 14px;
+  color: $black-color;
+  text-decoration: none;
+}
+
+.contacts__communication-methods-link--font {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.6px;
+}
+
+.contacts__communication-methods-link--tel-margin {
+  margin-bottom: 5px;
+}
+
+.contacts__communication-methods-link--mail-margin {
+  margin-bottom: 3px;
+}
+
+.contacts__communication-methods-link--mail-underline {
+  border-bottom: 1px solid $black-color;
+}
+
+.contacts__map-container {
+  position: relative;
+}
+
+.contacts__map {
+  display: flex;
+}
+
+.contacts__map-marker {
+  position: absolute;
+  top: 72px;
+  right: 88px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__headline {
+    margin-bottom: 28px;
+    padding-left: 115px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .contacts__headline::before {
+    top: 11px;
+    left: 62px;
+    width: 37px;
+    height: 2px;
+  }
+
+  .contacts__info-container {
+    position: relative;
+  }
+
+  .contacts__communication-methods {
+    position: absolute;
+    left: 49px;
+    margin-bottom: 0;
+    padding: 27px 42px 42px 36px;
+    z-index: 1;
+    background-color: #91aa59;
+    box-shadow: 0px 6px 15px 0px rgba(33, 33, 33, 0.2);
+  }
+
+  .contacts__communication-methods-list {
+    width: 170px;
+  }
+
+  .contacts__communication-methods-item {
+    margin-bottom: 40px;
+  }
+
+  .contacts__communication-methods-item--margin {
+    margin-bottom: 36px;
+  }
+
+  .contacts__communication-methods-link {
+    font-size: 15.5px;
+    line-height: 15.5px;
+    color: $white-color;
+  }
+
+  .contacts__communication-methods-link--font {
+    margin-bottom: 13px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .contacts__communication-methods-link--tel-margin {
+    margin-bottom: 7px;
+  }
+
+  .contacts__communication-methods-link--mail-margin {
+    margin-bottom: 6px;
+  }
+
+  .contacts__communication-methods-link--mail-underline {
+    border-color: $white-color;
+  }
+
+  .contacts__map-marker {
+    top: 82px;
+    right: 242px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 100%;
+    max-width: $desktop-width;
+  }
+
+  .contacts__headline {
+    margin-bottom: 63px;
+    padding-left: 155px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .contacts__headline::before {
+    top: 24px;
+    left: 99px;
+  }
+
+  .contacts__communication-methods {
+    left: 99px;
+    padding: 55px 75px 78px 69px;
+  }
+
+  .contacts__communication-methods-list {
+    width: 167px;
+  }
+
+  .contacts__communication-methods-item {
+    margin-bottom: 20px;
+  }
+
+  .contacts__communication-methods-item--margin {
+    margin-bottom: 16px;
+  }
+
+  .contacts__communication-methods-link {
+    font-size: 15.5px;
+    line-height: 20.8px;
+  }
+
+  .contacts__communication-methods-link--font {
+    margin-bottom: 5px;
+    font-size: 16.3px;
+    line-height: 30.8px;
+  }
+
+  .contacts__communication-methods-link--tel-margin {
+    margin-bottom: 8px;
+  }
+
+  .contacts__communication-methods-link--mail-underline {
+    line-height: 17.5px;
+  }
+
+  .contacts__map-marker {
+    top: 162px;
+    right: 45.9%;
+  }
+}
