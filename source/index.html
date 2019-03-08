@@ -19,17 +19,30 @@
     <nav class="header-nav">
       <ul class="header-nav__list">
         <li class="header-nav__item">
-          <p class="header-nav__studio-container">
-            <svg class="header-nav__studio-logo" xmlns="http://www.w3.org/2000/svg" width="36" height="20">
-              <image width="36" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAUCAQAAABPc1e+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAhoPBykfz26BAAABYUlEQVQ4y6XUvUvWURjG8csXCKKlF6RcHhEcAokGEZobdGtzFumFlv6AlraoxgikJFqSXsBosaHCwZYyUcHBRXGoiKYIxEyzT4vCk/1+Pb8n72s5574vvpzDue8TKdAkHhRWSlWUHMWENdP7A7VhRQQP9wO6gOGdNZf/H/QJ0eK8a36iVg3Umj/jZDpzNcdzK51pz7Mk79ORKrGH/NimEaP6dvbn8EFbs1c7CKb11OWG8bRZ0A18173HNIuuZkBHQf9fpn4sNgOawVChbQmvq4Ju426J7aUtTFQBXcdCqW3ctlM2jf0b1G4cvxwptQ3ikuBOOeiYL9SNRbFWcVhr+a8QKzZMmW/wKjXQLT56V9SgwRUzBhu2XI9F3NPrvjcGikDznjTuXBEXrfnqOXjrbH2txUYOZCDrWc9cpeE8k6F0pJa+bOdbHuVVlrOcxGkLlmxZdajiuXZ1wk1zfvjshd7f8Wvzy/RBiKUAAAAASUVORK5CYII="/>
-            </svg>
-            <span class="header-nav__studio-name">Pilates+</span>
+          <p class="pilates-logo">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/pilates-logo1366px.png 1x">
+              <source media="(min-width: 764px)" srcset="img/pilates-logo764px.png 1x">
+              <img class="pilates-logo__img-logo" src="img/pilates-logo320px.png" alt="Логотип Pilates">
+            </picture>
+            <span class="pilates-logo__studio-name">Pilates+</span>
           </p>
         </li>
         <li class="header-nav__item">
           <a class="header-nav__burger-menu" href="#">
-            <svg class="header-nav__burger" xmlns="http://www.w3.org/2000/svg" width="23" height="16">
-              <image width="23" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAQCAQAAABXJiyTAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAhsWGQrCot+2AAAAKklEQVQoz2P8/58BN2BEF2BiIAkw/idJOYmmDyrlLAwk+XU0IHEB2gYkAODfBh0waR/DAAAAAElFTkSuQmCC"/>
+            <svg class="header-nav__burger" xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16">
+              <defs>
+                <style>
+                  .cls-2 {
+                    fill: none;
+                    stroke: #1e1e1e;
+                    stroke-width: 2px;
+                    fill-rule: evenodd;
+                  }
+                </style>
+                <filter id="filter" filterUnits="userSpaceOnUse"><feFlood result="flood" flood-color="#fff"/><feComposite result="composite" operator="in" in2="SourceGraphic"/><feBlend result="blend" in2="SourceGraphic"/></filter>
+              </defs>
+              <g id="Бургер" filter="url(#filter)"><path id="_1" data-name="1" class="cls-2" d="M.961 7h23.026"/><path id="_2" data-name="2" class="cls-2" d="M.959 13.99h23.026"/><path id="_3" data-name="3" class="cls-2" d="M.977 0h14"/></g>
             </svg>
           </a>
         </li>
@@ -54,7 +67,7 @@
   <main class="pilates-main">
     <section class="about-pilates">
       <div class="about-pilates__container">
-        <h2 class="about-pilates__headline">О пилатесе</h2>
+        <h2 class="about-pilates__headline left-dash">О пилатесе</h2>
         <p class="about-pilates__text">Пилатес соединяет элементы растяжки с&nbsp;элементами силовой тренировки</p>
         <p class="about-pilates__text about-pilates__text--margin-bottom">Комплекс упражнений укрепляет мышцы пресса и спины, улучшает гибкость мышц и связок, подвижность суставов и избавляет от дискомфорта в&nbsp;позвоночнике</p>
         <a class="about-pilates__more-link" href="#">
@@ -67,7 +80,7 @@
       </div>
     </section>
     <section class="schedule-and-cost">
-      <h2 class="schedule-and-cost__headline">Расписание и стоимость</h2>
+      <h2 class="schedule-and-cost__headline left-dash">Расписание и стоимость</h2>
       <div class="schedule-and-cost__cell-container">
         <section class="schedule-and-cost__cell schedule-and-cost__cell--01">
           <div class="schedule-and-cost__info-container">
@@ -174,7 +187,7 @@
       </div>
     </section>
     <section class="how-are-the-classes">
-      <h2 class="how-are-the-classes__headline">Как проходят занятия</h2>
+      <h2 class="how-are-the-classes__headline left-dash">Как проходят занятия</h2>
       <section class="how-are-the-classes__item how-are-the-classes__item--posAbs1">
         <div class="how-are-the-classes__item-container">
           <h3 class="how-are-the-classes__item-headline">Дыхательные техники</h3>
@@ -201,7 +214,7 @@
       </section>
     </section>
     <section class="reviews">
-      <h2 class="reviews__headline">Отзывы</h2>
+      <h2 class="reviews__headline left-dash">Отзывы</h2>
       <div class="review__container">
         <div class="review__arrow-switch-container">
           <a class="review__arrow-switch-link" href="#">
@@ -335,7 +348,7 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="contacts__headline">Контакты</h2>
+      <h2 class="contacts__headline left-dash">Контакты</h2>
       <div class="contacts__info-container">
         <section class="contacts__communication-methods">
           <h3 class="visually-hidden">Способы связи с нами!</h3>
@@ -376,11 +389,13 @@
       </section>
       <section class="pilates-footer-logo">
         <h2 class="visually-hidden">Логотип</h2>
-        <p class="pilates-footer-logo__studio-container">
-          <svg class="pilates-footer-logo__studio-logo" xmlns="http://www.w3.org/2000/svg" width="38" height="22">
-            <image width="38" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAUCAQAAABPc1e+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAhoPBykfz26BAAABYUlEQVQ4y6XUvUvWURjG8csXCKKlF6RcHhEcAokGEZobdGtzFumFlv6AlraoxgikJFqSXsBosaHCwZYyUcHBRXGoiKYIxEyzT4vCk/1+Pb8n72s5574vvpzDue8TKdAkHhRWSlWUHMWENdP7A7VhRQQP9wO6gOGdNZf/H/QJ0eK8a36iVg3Umj/jZDpzNcdzK51pz7Mk79ORKrGH/NimEaP6dvbn8EFbs1c7CKb11OWG8bRZ0A18173HNIuuZkBHQf9fpn4sNgOawVChbQmvq4Ju426J7aUtTFQBXcdCqW3ctlM2jf0b1G4cvxwptQ3ikuBOOeiYL9SNRbFWcVhr+a8QKzZMmW/wKjXQLT56V9SgwRUzBhu2XI9F3NPrvjcGikDznjTuXBEXrfnqOXjrbH2txUYOZCDrWc9cpeE8k6F0pJa+bOdbHuVVlrOcxGkLlmxZdajiuXZ1wk1zfvjshd7f8Wvzy/RBiKUAAAAASUVORK5CYII="/>
-          </svg>
-          <span class="pilates-footer-logo__studio-name">Pilates+</span>
+        <p class="pilates-logo pilates-logo--width-margin">
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/pilates-logo1366px.png 1x">
+            <source media="(min-width: 764px)" srcset="img/pilates-logo-footer764px.png 1x">
+            <img class="pilates-logo__img-logo pilates-logo__img-logo--margin-bottom" src="img/pilates-logo-footer320px.png" alt="Логотип Pilates">
+          </picture>
+          <span class="pilates-footer-logo__studio-name pilates-logo__studio-name">Pilates+</span>
         </p>
       </section>
       <section class="social">

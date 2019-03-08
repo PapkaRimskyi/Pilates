@@ -1,0 +1,36 @@
+.left-dash {
+  position: relative;
+  padding-left: 25px;
+}
+
+.left-dash::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 0;
+  width: 17px;
+  height: 1px;
+  background-color: $black-color;
+}
+
+@media (min-width: $tablet-width) {
+  .left-dash {
+    padding-left: 52px;
+  }
+
+  .left-dash::before {
+    top: 11px;
+    width: 37px;
+    height: 2px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .left-dash {
+    padding-left: 55px;
+  }
+
+  .left-dash::before {
+    top: 24px;
+  }
+}

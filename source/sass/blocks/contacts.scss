@@ -1,5 +1,4 @@
 .contacts__headline {
-  position: relative;
   margin-top: 0;
   margin-bottom: 22px;
   padding-left: 41px;
@@ -9,13 +8,7 @@
 }
 
 .contacts__headline::before {
-  position: absolute;
-  content: "";
-  top: 8px;
   left: 15px;
-  width: 17px;
-  height: 1px;
-  background-color: $black-color;
 }
 
 .contacts__communication-methods {
@@ -95,10 +88,7 @@
   }
 
   .contacts__headline::before {
-    top: 11px;
     left: 62px;
-    width: 37px;
-    height: 2px;
   }
 
   .contacts__info-container {
@@ -171,7 +161,6 @@
   }
 
   .contacts__headline::before {
-    top: 24px;
     left: 99px;
   }
 

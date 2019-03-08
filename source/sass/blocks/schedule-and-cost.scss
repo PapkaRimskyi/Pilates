@@ -5,24 +5,12 @@
 }
 
 .schedule-and-cost__headline {
-  position: relative;
   margin-top: 0;
   margin-bottom: 28px;
-  padding-left: 25px;
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.4px;
-}
-
-.schedule-and-cost__headline::before {
-  position: absolute;
-  content: "";
-  top: 8px;
-  left: 0;
-  width: 17px;
-  height: 1px;
-  background-color: $black-color;
 }
 
 .schedule-and-cost__cell {
@@ -158,15 +146,8 @@
 
   .schedule-and-cost__headline {
     margin-bottom: 46px;
-    padding-left: 54px;
     font-size: 24.7px;
     line-height: 24.7px;
-  }
-
-  .schedule-and-cost__headline::before {
-    top: 11px;
-    width: 37px;
-    height: 2px;
   }
 
   .schedule-and-cost__cell-container {
@@ -201,19 +182,13 @@
   .schedule-and-cost {
     margin-bottom: 119px;
     width: 100%;
-    max-width: $desktop-width;
+    max-width: 1165px;
   }
 
   .schedule-and-cost__headline {
     margin-bottom: 63px;
-    padding-left: 155px;
     font-size: 48.5px;
     line-height: 48.5px;
-  }
-
-  .schedule-and-cost__headline::before {
-    top: 23px;
-    left: 100px;
   }
 
   .schedule-and-cost__cell {
@@ -224,7 +199,7 @@
 
   .schedule-and-cost__cell:nth-child(3n + 2) {
     margin-right: 19px;
-    margin-left: 19px;
+    margin-left: 18px;
   }
 
   .schedule-and-cost__cell--01::before,

@@ -9,23 +9,11 @@
 }
 
 .about-pilates__headline {
-  position: relative;
   margin-top: 0;
   margin-bottom: 28px;
-  padding-left: 25px;
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
-}
-
-.about-pilates__headline::before {
-  position: absolute;
-  content: "";
-  top: 8px;
-  left: 0;
-  width: 17px;
-  height: 1px;
-  background-color: $black-color;
 }
 
 .about-pilates__text {
@@ -72,15 +60,8 @@
 
   .about-pilates__headline {
     margin-bottom: 41px;
-    padding-left: 55px;
     font-size: 24px;
     line-height: 25px;
-  }
-
-  .about-pilates__headline::before {
-    top: 10px;
-    width: 37px;
-    height: 2px;
   }
 
   .about-pilates__text {
@@ -117,13 +98,8 @@
 
   .about-pilates__headline {
     margin-bottom: 57px;
-    padding-left: 55px;
     font-size: 48px;
     line-height: 48px;
-  }
-
-  .about-pilates__headline::before {
-    top: 24px;
   }
 
   .about-pilates__text {

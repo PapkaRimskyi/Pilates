@@ -10,20 +10,16 @@
 }
 
 .pilates-footer-logo__studio-name {
-  font-family: $SFUIText-family;
-  font-size: 8.5px;
-  font-weight: 300;
-  line-height: 14px;
-  color: $white-color;
-  text-transform: uppercase;
+  font-size: 9px;
+  line-height: 13px;
 }
 
 @media (min-width: $tablet-width) {
   .pilates-footer-logo {
     margin-top: 4px;
-    margin-right: 78px;
+    margin-right: 84px;
     margin-bottom: 0;
-    width: 42px;
+    width: 52px;
   }
 }
 
@@ -36,12 +32,6 @@
 
   .pilates-footer-logo__studio-container {
     width: 68px;
-  }
-
-  .pilates-footer-logo__studio-logo,
-  .pilates-footer-logo__studio-logo image {
-    width: 62px;
-    height: 36px;
   }
 
   .pilates-footer-logo__studio-name {

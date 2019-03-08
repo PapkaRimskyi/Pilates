@@ -5,23 +5,11 @@
 }
 
 .reviews__headline {
-  position: relative;
   margin-top: 0;
   margin-bottom: 30px;
-  padding-left: 25px;
   font-size: 17.5px;
   font-weight: 500;
   line-height: 18px;
-}
-
-.reviews__headline::before {
-  position: absolute;
-  content: "";
-  top: 8px;
-  left: 0;
-  width: 17px;
-  height: 1px;
-  background-color: $black-color;
 }
 
 .review__container {
@@ -143,15 +131,8 @@
 
   .reviews__headline {
     margin-bottom: 46px;
-    padding-left: 52px;
     font-size: 24.5px;
     line-height: 24.5px;
-  }
-
-  .reviews__headline::before {
-    top: 11px;
-    width: 37px;
-    height: 2px;
   }
 
   .review__container {
@@ -221,14 +202,8 @@
 
   .reviews__headline {
     margin-bottom: 63px;
-    padding-left: 56px;
     font-size: 47.4px;
     line-height: 48.1px;
-  }
-
-  .reviews__headline::before {
-    top: 24px;
-    left: 0;
   }
 
   .review__container {
