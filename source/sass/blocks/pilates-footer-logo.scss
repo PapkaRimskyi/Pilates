@@ -1,0 +1,52 @@
+.pilates-footer-logo {
+  margin-bottom: 4px;
+  width: 42px;
+}
+
+.pilates-footer-logo__studio-container {
+  margin: 0;
+  line-height: 10px;
+  text-align: center;
+}
+
+.pilates-footer-logo__studio-name {
+  font-family: $SFUIText-family;
+  font-size: 8.5px;
+  font-weight: 300;
+  line-height: 14px;
+  color: $white-color;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .pilates-footer-logo {
+    margin-top: 4px;
+    margin-right: 78px;
+    margin-bottom: 0;
+    width: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pilates-footer-logo {
+    margin-top: 0;
+    margin-right: 74px;
+    width: 70px;
+  }
+
+  .pilates-footer-logo__studio-container {
+    width: 68px;
+  }
+
+  .pilates-footer-logo__studio-logo,
+  .pilates-footer-logo__studio-logo image {
+    width: 62px;
+    height: 36px;
+  }
+
+  .pilates-footer-logo__studio-name {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+  }
+}

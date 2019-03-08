@@ -1,0 +1,44 @@
+.pilates-footer {
+  position: absolute;
+  top: 99.9%;
+  width: $mobile-width;
+  background-color: #91aa59;
+}
+
+.pilates-footer__container {
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 5px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .pilates-footer {
+    top: 100%;
+    width: $tablet-width;
+  }
+
+  .pilates-footer__container {
+    padding-top: 15px;
+    padding-bottom: 13px;
+    width: 724px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pilates-footer {
+    width: 100%;
+    max-width: $desktop-width;
+  }
+
+  .pilates-footer__container {
+    padding-top: 39px;
+    padding-bottom: 44px;
+    width: 1165px;
+  }
+}
