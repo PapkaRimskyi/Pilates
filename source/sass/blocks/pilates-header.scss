@@ -17,6 +17,7 @@
 
 @media (min-width: $desktop-width) {
   .pilates-header {
+    position: relative;
     width: 100%;
     max-width: $desktop-width;
     background-image: url("../img/strudio-presentationAbsolute1366px.png"), url("../img/header-navCircle3BG1366px.png"), url("../img/pilates-headerBGcircle1366px.png");

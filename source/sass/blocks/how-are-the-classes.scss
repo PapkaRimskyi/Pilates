@@ -208,6 +208,7 @@
 
 @media (min-width: $desktop-width) {
   .how-are-the-classes {
+    position: relative;
     width: 100%;
     max-width: 1160px;
   }

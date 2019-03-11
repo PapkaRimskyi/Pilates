@@ -1,0 +1,83 @@
+.anchors {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .anchors {
+    position: absolute;
+    width: 21px;
+    display: block;
+  }
+
+  .anchors--pilates-header-position {
+    top: 233px;
+    right: 34px;
+  }
+
+  .anchors--about-pilates-position {
+    top: 218px;
+    right: -39px;
+  }
+
+  .anchors--schedule-and-cost-position {
+    top: 296px;
+    right: -65px;
+  }
+
+  .anchors--how-are-the-classes-position {
+    top: 244px;
+    right: -65px;
+  }
+
+  .anchors--review-position {
+    top: 197px;
+    right: -66px;
+  }
+
+  .anchors__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .anchors__number {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-family: $SFUIText-family;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  .anchors__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .anchors__item {
+    margin-bottom: 18px;
+  }
+
+  .anchors__item--active-margin {
+    margin-bottom: 20px;
+  }
+
+  .anchors__link {
+    width: 5px;
+    height: 5px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+  }
+
+  .anchors__link--active {
+    margin: 0 auto;
+    width: 2px;
+    height: 60px;
+    opacity: 1;
+    border-radius: 0;
+  }
+}

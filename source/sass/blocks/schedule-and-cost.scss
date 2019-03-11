@@ -180,6 +180,7 @@
 
 @media (min-width: $desktop-width) {
   .schedule-and-cost {
+    position: relative;
     margin-bottom: 119px;
     width: 100%;
     max-width: 1165px;
@@ -272,6 +273,6 @@
   }
 
   .schedule-and-cost__sign-up-arrow {
-    top: 21px;
+    top: 20px;
   }
 }

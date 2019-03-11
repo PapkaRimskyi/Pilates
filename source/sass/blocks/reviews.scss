@@ -195,6 +195,7 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    position: relative;
     margin-bottom: 127px;
     width: 100%;
     max-width: 1165px;
