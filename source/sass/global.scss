@@ -70,6 +70,10 @@ body {
   overflow: hidden;
 }
 
+.display-none {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   body {
     max-width: $tablet-width;

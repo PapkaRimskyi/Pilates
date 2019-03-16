@@ -7,11 +7,19 @@
   overflow: hidden;
 }
 
+.pilates-header--js-margin-bottom {
+  margin-bottom: 46px;
+}
+
 @media (min-width: $tablet-width) {
   .pilates-header {
     width: $tablet-width;
     background-image: url("../img/strudio-presentationAbsolute764px.png"), url("../img/pilates-headerBGcircle764px.png");
     background-position: 40px 49px, 0 0;
+  }
+
+  .pilates-header--js-margin-bottom {
+    margin-bottom: 87px;
   }
 }
 
@@ -22,5 +30,9 @@
     max-width: $desktop-width;
     background-image: url("../img/strudio-presentationAbsolute1366px.png"), url("../img/header-navCircle3BG1366px.png"), url("../img/pilates-headerBGcircle1366px.png");
     background-position: 372px 31px, 757px 177px, 0 0;
+  }
+
+  .pilates-header--js-margin-bottom {
+    margin-bottom: 99px;
   }
 }

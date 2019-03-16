@@ -16,7 +16,7 @@
 
 <body>
   <header class="pilates-header" id="studio-pilates">
-    <nav class="header-nav">
+    <nav class="header-nav display-none">
       <ul class="header-nav__list">
         <li class="header-nav__item">
           <p class="pilates-logo">
@@ -42,7 +42,11 @@
                 </style>
                 <filter id="filter" filterUnits="userSpaceOnUse"><feFlood result="flood" flood-color="#fff"/><feComposite result="composite" operator="in" in2="SourceGraphic"/><feBlend result="blend" in2="SourceGraphic"/></filter>
               </defs>
-              <g id="Бургер" filter="url(#filter)"><path id="_1" data-name="1" class="cls-2" d="M.961 7h23.026"/><path id="_2" data-name="2" class="cls-2" d="M.959 13.99h23.026"/><path id="_3" data-name="3" class="cls-2" d="M.977 0h14"/></g>
+              <g id="Бургер" filter="url(#filter)">
+                <path id="_1" data-name="1" class="cls-2" d="M.961 7h23.026"/>
+                <path id="_2" data-name="2" class="cls-2" d="M.959 13.99h23.026"/>
+                <path id="_3" data-name="3" class="cls-2" d="M.977 0h14"/>
+              </g>
             </svg>
           </a>
         </li>
@@ -51,7 +55,7 @@
         </li>
       </ul>
     </nav>
-    <section class="studio-presentation">
+    <section class="studio-presentation display-none">
       <h1 class="studio-presentation__headline">Студия Пилатеса</h1>
       <p class="studio-presentation__text">Твое здоровое тело через 10 занятий</p>
       <a class="studio-presentation__schedule" href="#schedule-and-cost">
@@ -63,7 +67,7 @@
         </svg>
       </a>
     </section>
-    <section class="anchors anchors--pilates-header-position">
+    <section class="anchors anchors--pilates-header-position anchors--js-class">
       <h2 class="visually-hidden">Навигация</h2>
       <div class="anchors__container">
         <p class="anchors__number">01</p>
@@ -97,6 +101,44 @@
             <a class="anchors__link" href="#">
               <span class="visually-hidden">Переключатель</span>
             </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="menu-is-open">
+      <h2 class="visually-hidden">Развернутое меню навигации по сайту</h2>
+      <div class="menu-is-open__container">
+        <a class="menu-is-open__close-menu" href="#">
+          <svg class="menu-is-open__close-button-img" id="Закрыть" xmlns="http://www.w3.org/2000/svg" width="42" height="41.969" viewBox="0 0 42 41.969">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #fff;
+                  stroke-width: 2px;
+                  fill-rule: evenodd;
+                }
+              </style>
+            </defs>
+            <path id="Фигура_4" class="cls-1" d="M1277.99 88.553l38.11-38.561" transform="translate(-1277 -49)"/>
+            <path id="Фигура_4_копия" class="cls-1" d="M1279.9 49.992l38.11 38.561" transform="translate(-1277 -49)"/>
+          </svg>
+        </a>
+        <ul class="menu-is-open__list">
+          <li class="menu-is-open__item">
+            <a class="menu-is-open__link menu-is-open__link--active" href="#about-pilates">О пилатесе</a>
+          </li>
+          <li class="menu-is-open__item">
+            <a class="menu-is-open__link" href="#schedule-and-cost">Расписание и стоимость</a>
+          </li>
+          <li class="menu-is-open__item">
+            <a class="menu-is-open__link" href="#how-are-the-classes">Как проходят занятия</a>
+          </li>
+          <li class="menu-is-open__item">
+            <a class="menu-is-open__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="menu-is-open__item">
+            <a class="menu-is-open__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </div>
@@ -297,6 +339,50 @@
               </a>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="make-an-appointment make-an-appointment--js-display-none">
+        <h2 class="visually-hidden">Окно записи на прием</h2>
+        <div class="make-an-appointment__container">
+          <a class="make-an-appointment__close-popup" href="#">
+            <svg class="make-an-appointment__close-popup-img" id="Закрыть" xmlns="http://www.w3.org/2000/svg" width="34.31" height="38.25" viewBox="0 0 34.31 38.25">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #242424;
+                    stroke-width: 2px;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path id="Фигура_4" class="cls-1" d="M1124.02 1827l30.78-34.92" transform="translate(-1123.03 -1791.06)"/>
+              <path id="Фигура_4_копия" class="cls-1" d="M1125.56 1792.08l30.77 34.92" transform="translate(-1123.03 -1791.06)"/>
+            </svg>
+          </a>
+          <p class="make-an-appointment__question">Хочешь записаться на занятие?</p>
+          <p class="make-an-appointment__leave-contact">Оставьте контакты и наши менеджеры свяжутся в ближайшее время</p>
+          <form class="make-an-appointment__form" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="make-an-appointment__form-list">
+              <li class="make-an-appointment__form-item">
+                <input class="make-an-appointment__form-input" type="telephone" name="telephone" placeholder="Телефон" required>
+              </li>
+              <li class="make-an-appointment__form-item">
+                <input class="make-an-appointment__form-input" type="text" name="name" placeholder="Имя" required>
+              </li>
+              <li class="make-an-appointment__form-item">
+                <input class="make-an-appointment__form-input" type="email" name="e-mail" placeholder="E-mail" required>
+              </li>
+            </ul>
+            <label class="make-an-appointment__consent-to-processing">
+              <input class="make-an-appointment__input visually-hidden" type="checkbox" name="consent-to-processing-of-personal-data" checked required>
+              <span class="make-an-appointment__text">Я согласен на обработку персональных данных</span>
+              <svg class="make-an-appointment__input-toggle-yes" xmlns="http://www.w3.org/2000/svg" width="13.437" height="11.5">
+                <path d="M2.441 4.34l3.048 3.15 5.427-6.5" fill="none" stroke="#fff" stroke-width="2"/>
+              </svg>
+            </label>
+            <button class="make-an-appointment__sign-up" type="submit">Записаться</button>
+          </form>
         </div>
       </section>
     </section>
@@ -537,7 +623,7 @@
         </div>
       </section>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2 class="contacts__headline left-dash">Контакты</h2>
       <div class="contacts__info-container">
         <section class="contacts__communication-methods">
@@ -619,6 +705,7 @@
       </section>
     </section>
   </footer>
+  <script src="js/javascript.js"></script>
 </body>
 
 </html>

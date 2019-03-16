@@ -1,0 +1,140 @@
+.make-an-appointment {
+  position: fixed;
+  top: 17%;
+  left: 29%;
+  margin: $margin-auto;
+  width: $mobile-container-width;
+  background-color: $white-color;
+  box-shadow: 0px 9px 22.72px 9.28px rgba(27, 27, 27, 0.2);
+  border-radius: 4px;
+  color: $black-color;
+  z-index: 1;
+}
+
+.make-an-appointment--js-display-none {
+  display: none;
+}
+
+.make-an-appointment__container {
+  margin: $margin-auto;
+  padding-top: 29px;
+  padding-bottom: 53px;
+  width: 254px;
+}
+
+.make-an-appointment__close-popup {
+  margin-left: auto;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  width: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.make-an-appointment__close-popup-img {
+  width: 19px;
+  height: 20px;
+}
+
+.make-an-appointment__question {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: center;
+}
+
+.make-an-appointment__leave-contact {
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-size: 13.7px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.make-an-appointment__form-list {
+  margin: 0 auto;
+  padding: 0;
+  width: 170px;
+  list-style-type: none;
+}
+
+.make-an-appointment__form-item {
+  margin-bottom: 28px;
+}
+
+.make-an-appointment__form-input {
+  padding: 0 5px 5px 1px;
+  border: none;
+  border-bottom: 2px solid $black-color;
+}
+
+.make-an-appointment__form-input::placeholder {
+  margin-bottom: 7px;
+  font-family: $SFUIText-family;
+  font-size: 14.11px;
+  font-weight: 300;
+  line-height: 19.73px;
+  color: $black-color;
+}
+
+.make-an-appointment__consent-to-processing {
+  position: relative;
+  margin: $margin-auto;
+  margin-bottom: 34px;
+  padding-left: 40px;
+  width: 175px;
+  display: flex;
+  cursor: pointer;
+}
+
+.make-an-appointment__input + .make-an-appointment__text::before {
+  position: absolute;
+  content: "";
+  top: 1px;
+  left: -34px;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #91aa59;
+  background-color: $white-color;
+}
+
+.make-an-appointment__input:checked + .make-an-appointment__text::before {
+  background-color: #91aa59;
+}
+
+.make-an-appointment__input-toggle-yes {
+  display: none;
+}
+
+.make-an-appointment__input:checked ~ .make-an-appointment__input-toggle-yes {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  display: block;
+}
+
+.make-an-appointment__text {
+  position: relative;
+  font-family: $SFUIText-family;
+  font-size: 14.14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.make-an-appointment__sign-up {
+  margin: $margin-auto;
+  padding: 9px 11px 12px 0;
+  width: 155px;
+  display: flex;
+  justify-content: center;
+  font-family: $SFUIText-family;
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 14px;
+  color: $white-color;
+  border: none;
+  background-color: #91aa59;
+  border-radius: 20px;
+}
