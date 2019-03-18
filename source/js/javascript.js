@@ -10,6 +10,10 @@ var menuIsOpenCloseMenu = document.querySelector(".menu-is-open__close-menu");
 var makeAnAppointmentClosePopup = document.querySelector(".make-an-appointment__close-popup");
 var makeAnAppointment = document.querySelector(".make-an-appointment");
 var scheduleAndCostSignUp = document.querySelectorAll(".schedule-and-cost__sign-up");
+var reviewSwitchLink = document.querySelectorAll(".review__switch-link");
+var reviewsReviewSection = document.querySelectorAll(".reviews__review-section");
+
+var classActiveArray = ["review__switch-link--active", "reviews__review-section--active"];
 
 headerNav.classList.remove("display-none");
 studioPresentation.classList.remove("display-none");
@@ -24,7 +28,7 @@ headerNavBurgerMenu.addEventListener("click", function (evt) {
   menuIsOpen.classList.remove("menu-is-open--display-none");
 });
 
-menuIsOpenCloseMenu.addEventListener("click", function(evt) {
+menuIsOpenCloseMenu.addEventListener("click", function (evt) {
   evt.preventDefault();
   headerNav.classList.remove("display-none");
   studioPresentation.classList.remove("display-none");
@@ -33,13 +37,13 @@ menuIsOpenCloseMenu.addEventListener("click", function(evt) {
   menuIsOpen.classList.add("menu-is-open--display-none");
 });
 
-makeAnAppointmentClosePopup.addEventListener("click", function(evt) {
+makeAnAppointmentClosePopup.addEventListener("click", function (evt) {
   evt.preventDefault();
   makeAnAppointment.classList.add("make-an-appointment--js-display-none");
 });
 
 var addSignUpClickHandler = function (link) {
-  link.addEventListener("click", function(evt) {
+  link.addEventListener("click", function (evt) {
     evt.preventDefault();
     makeAnAppointment.classList.remove("make-an-appointment--js-display-none");
   });
@@ -48,3 +52,23 @@ var addSignUpClickHandler = function (link) {
 for (var i = 0; i < scheduleAndCostSignUp.length; i++) {
   addSignUpClickHandler(scheduleAndCostSignUp[i]);
 };
+
+var removeClassActive = function (selector, classActive) {
+  for (var i = 0; i < selector.length; i++) {
+    selector[i].classList.remove(classActive);
+  }
+};
+
+var addReviewLinkClickHandler = function (link, container) {
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    removeClassActive(reviewSwitchLink, classActiveArray[0]);
+    link.classList.add(classActiveArray[0]);
+    removeClassActive(reviewsReviewSection, classActiveArray[1]);
+    container.classList.add(classActiveArray[1]);
+  })
+};
+
+for (var i = 0; i < reviewSwitchLink.length; i++) {
+  addReviewLinkClickHandler(reviewSwitchLink[i], reviewsReviewSection[i]);
+}

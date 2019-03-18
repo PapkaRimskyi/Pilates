@@ -79,6 +79,13 @@
   right: 88px;
 }
 
+.contacts__map-iframe {
+  position: absolute;
+  top: 0;
+  width: 320px;
+  height: 272px;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__headline {
     margin-bottom: 28px;
@@ -145,6 +152,11 @@
     top: 82px;
     right: 242px;
   }
+
+  .contacts__map-iframe {
+    width: 764px;
+    height: 355px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -203,5 +215,10 @@
   .contacts__map-marker {
     top: 162px;
     right: 45.9%;
+  }
+
+  .contacts__map-iframe {
+    width: 1366px;
+    height: 513px;
   }
 }
