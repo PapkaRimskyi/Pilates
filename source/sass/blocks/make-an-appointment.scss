@@ -5,7 +5,7 @@
   margin: $margin-auto;
   width: $mobile-container-width;
   background-color: $white-color;
-  box-shadow: 0px 9px 22.72px 9.28px rgba(27, 27, 27, 0.2);
+  box-shadow: 0 9px 22.72px 9.28px rgba(27, 27, 27, 0.2);
   border-radius: 4px;
   color: $black-color;
   z-index: 1;
@@ -31,6 +31,14 @@
   justify-content: flex-end;
 }
 
+.make-an-appointment__close-popup:hover {
+  opacity: 0.5;
+}
+
+.make-an-appointment__close-popup:active {
+  opacity: 0.2;
+}
+
 .make-an-appointment__close-popup-img {
   width: 19px;
   height: 20px;
@@ -54,7 +62,7 @@
 }
 
 .make-an-appointment__form-list {
-  margin: 0 auto;
+  margin: $margin-auto;
   padding: 0;
   width: 170px;
   list-style-type: none;
@@ -100,8 +108,20 @@
   background-color: $white-color;
 }
 
+.make-an-appointment__input:hover + .make-an-appointment__text::before {
+  background-color: rgba(145, 170, 89, 0.5);
+}
+
+.make-an-appointment__input:active + .make-an-appointment__text::before {
+  background-color: rgba(145, 170, 89, 0.8);
+}
+
 .make-an-appointment__input:checked + .make-an-appointment__text::before {
   background-color: #91aa59;
+}
+
+.make-an-appointment__input:checked:active + .make-an-appointment__text::before {
+  background-color: rgba(145, 170, 117, 0.5);
 }
 
 .make-an-appointment__input-toggle-yes {
@@ -140,8 +160,17 @@
   cursor: pointer;
 }
 
+.make-an-appointment__sign-up:hover {
+  opacity: 0.5;
+}
+
+.make-an-appointment__sign-up:active {
+  opacity: 1;
+  box-shadow: 0 1px 10px $black-color inset;
+}
+
 @media (min-width: $tablet-width) {
-  .make-an-appointment  {
+  .make-an-appointment {
     top: -6.3%;
     width: $tablet-container-width;
   }
@@ -223,7 +252,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .make-an-appointment  {
+  .make-an-appointment {
     top: 0.9%;
     width: 100%;
     max-width: $desktop-width;

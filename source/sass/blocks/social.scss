@@ -8,7 +8,29 @@
   width: 74px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style-type: none;
+}
+
+.social__link {
+  display: flex;
+  fill: #ffffff;
+}
+
+.social__link--vk-style:hover {
+  fill: #597da3;
+}
+
+.social__link--facebook-style:hover {
+  fill: #3b5998;
+}
+
+.social__link--instagram-style:hover {
+  fill: #8a3ab9;
+}
+
+.social__link:active {
+  opacity: 0.5;
 }
 
 @media (min-width: $tablet-width) {

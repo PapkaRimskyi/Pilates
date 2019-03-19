@@ -34,6 +34,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
@@ -44,6 +45,14 @@
 .header-nav__burger-menu {
   margin-bottom: 3px;
   display: flex;
+}
+
+.header-nav__burger-menu:hover {
+  opacity: 0.3;
+}
+
+.header-nav__burger-menu:active {
+  opacity: 0.8;
 }
 
 .header-nav__burger {
@@ -99,6 +108,15 @@
     color: $black-color;
     vertical-align: middle;
   }
+
+  .header-nav__tel-link:hover {
+    opacity: 0.5;
+  }
+
+  .header-nav__tel-link:active {
+    color: #91aa59;
+    opacity: 1;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -125,7 +143,7 @@
   }
 
   .header-nav__list {
-    margin: 0 auto;
+    margin: $margin-auto;
     width: 1175px;
   }
 

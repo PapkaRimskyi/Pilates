@@ -14,14 +14,15 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
+  word-wrap: break-word;
 }
 
 .about-pilates__text {
   margin-top: 0;
   margin-bottom: 11px;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.4px;
+  word-wrap: break-word;
 }
 
 .about-pilates__text--margin-bottom {
@@ -29,6 +30,7 @@
 }
 
 .about-pilates__more-link {
+  width: 110px;
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -38,6 +40,14 @@
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
+}
+
+.about-pilates__more-link:hover {
+  opacity: 0.3;
+}
+
+.about-pilates__more-link:active {
+  opacity: 0.8;
 }
 
 .about-pilates__more-link-text {

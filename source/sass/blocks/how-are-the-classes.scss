@@ -1,5 +1,5 @@
 .how-are-the-classes {
-  margin: 0 auto;
+  margin: $margin-auto;
   width: $mobile-container-width;
 }
 
@@ -9,6 +9,7 @@
   font-size: 17px;
   font-weight: 500;
   line-height: 18px;
+  word-wrap: break-word;
 }
 
 .how-are-the-classes__item {
@@ -74,6 +75,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+  word-wrap: break-word;
 }
 
 .how-are-the-classes__item--posAbs2 .how-are-the-classes__item-headline--margin-bottom {
@@ -95,11 +97,11 @@
   font-weight: 300;
   line-height: 16px;
   text-align: center;
+  word-wrap: break-word;
 }
 
 @media (min-width: $tablet-width) {
   .how-are-the-classes {
-    margin: 0 auto;
     width: $tablet-container-width;
   }
 
@@ -114,7 +116,7 @@
   }
 
   .how-are-the-classes__item {
-    margin: 0 auto;
+    margin: $margin-auto;
     margin-bottom: 203px;
     margin-left: 54px;
   }
@@ -216,6 +218,7 @@
   .how-are-the-classes__headline {
     margin-bottom: 213px;
     padding-left: 52px;
+    width: 540px;
     font-size: 48px;
     line-height: 48px;
   }

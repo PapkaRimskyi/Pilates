@@ -7,7 +7,7 @@
   "license": "ISC",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
-    "autoprefixer": "^9.4.7",
+    "autoprefixer": "^9.5.0",
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
@@ -19,6 +19,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.1",
     "gulp-webp": "^4.0.1",
+    "pump": "^3.0.0",
     "stylelint": "^9.10.1",
     "stylelint-config-htmlacademy": "^0.1.1",
     "svgo": "^1.1.1"

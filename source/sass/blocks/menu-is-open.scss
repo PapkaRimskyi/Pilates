@@ -22,13 +22,21 @@
   justify-content: flex-end;
 }
 
+.menu-is-open__close-menu:hover {
+  opacity: 0.5;
+}
+
+.menu-is-open__close-menu:active {
+  opacity: 0.2;
+}
+
 .menu-is-open__close-button-img {
   width: 25px;
   height: 25px;
 }
 
 .menu-is-open__list {
-  margin: 0 auto;
+  margin: $margin-auto;
   padding: 0;
   width: 244px;
   list-style-type: none;
@@ -49,6 +57,14 @@
   line-height: 46px;
   color: $white-color;
   text-decoration: none;
+}
+
+.menu-is-open__link:hover {
+  opacity: 0.3;
+}
+
+.menu-is-open__link:active {
+  opacity: 0.7;
 }
 
 .menu-is-open__link--active {

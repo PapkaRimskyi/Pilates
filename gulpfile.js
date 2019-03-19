@@ -6,13 +6,14 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var del = require("del");
-var rename = require("gulp-rename");
-var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
-var svgo = require("svgo");
 var webp = require("gulp-webp");
+var del = require("del");
+var csso = require("gulp-csso");
+var rename = require("gulp-rename");
+var svgo = require("svgo");
 var uglify = require("gulp-uglify");
+var pump = require("pump");
 
 gulp.task("js_min", function () {
   return gulp.src("source/js/javascript.js")
@@ -27,7 +28,10 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer({
+        cascade: false,
+        browsers: ['last 2 versions']
+      })
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())

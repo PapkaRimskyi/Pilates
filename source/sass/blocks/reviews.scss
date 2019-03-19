@@ -10,6 +10,7 @@
   font-size: 17.5px;
   font-weight: 500;
   line-height: 18px;
+  word-wrap: break-word;
 }
 
 .review__container {
@@ -52,6 +53,8 @@
   margin-bottom: 6px;
   font-size: 16px;
   line-height: 16px;
+  word-wrap: break-word;
+  text-align: center;
 }
 
 .reviews__years-social-container {
@@ -65,6 +68,7 @@
 .reviews__review-section-how-years {
   margin: 0;
   width: 46px;
+  word-wrap: break-word;
 }
 
 .reviews__review-section-social-list {
@@ -74,24 +78,42 @@
   width: 53px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
 .reviews__review-section-social-item {
-  align-self: center;
+  margin-bottom: 5px;
 }
 
 .reviews__review-section-social-link {
   display: flex;
+  fill: #7f7f7f;
+}
+
+.reviews__review-section-social-link--vk-style:hover {
+  fill: #597da3;
+}
+
+.reviews__review-section-social-link--instagram-style:hover {
+  fill: #8a3ab9;
+}
+
+.reviews__review-section-social-link--vk-style:active,
+.reviews__review-section-social-link--instagram-style:active {
+  opacity: 0.5;
 }
 
 .reviews__review-section-text {
   margin-top: 0;
+  width: 266px;
   font-family: $SFUIText-family;
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
   text-align: center;
+  word-wrap: break-word;
 }
 
 .reviews__review-section-text--desktop-display {
@@ -99,7 +121,7 @@
 }
 
 .review__switch-link-list {
-  margin: 0 auto;
+  margin: $margin-auto;
   padding: 0;
   width: 47px;
   display: flex;
@@ -114,6 +136,16 @@
   display: flex;
   background-color: rgba(199, 212, 171, 0.5);
   border-radius: 50%;
+}
+
+.review__switch-link:hover {
+  background-color: #cccccc;
+}
+
+.review__switch-link:active {
+  width: 8px;
+  height: 9px;
+  background-color: #cccccc;
 }
 
 .review__switch-link--active {
@@ -147,6 +179,14 @@
     display: flex;
   }
 
+  .review__arrow-switch-link:hover {
+    opacity: 0.3;
+  }
+
+  .review__arrow-switch-link:active {
+    opacity: 0.8;
+  }
+
   .review__arrow--right {
     transform: rotate(180deg);
   }
@@ -177,6 +217,7 @@
   .reviews__review-section-user-name {
     font-size: 18px;
     line-height: 18px;
+    text-align: left;
   }
 
   .reviews__years-social-container {
@@ -186,6 +227,7 @@
   }
 
   .reviews__review-section-text {
+    width: 298px;
     font-size: 16px;
     line-height: 19px;
     text-align: left;
@@ -274,6 +316,7 @@
   }
 
   .reviews__review-section-text {
+    width: 434px;
     font-size: 15.9px;
     line-height: 24px;
   }
@@ -289,6 +332,11 @@
   .review__switch-link {
     width: 10px;
     height: 10px;
+  }
+
+  .review__switch-link:active {
+    width: 15px;
+    height: 15px;
   }
 
   .review__switch-link--active {
