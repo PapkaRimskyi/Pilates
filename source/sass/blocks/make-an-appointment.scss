@@ -116,6 +116,10 @@
   background-color: rgba(145, 170, 89, 0.8);
 }
 
+.make-an-appointment__input:focus + .make-an-appointment__text::before {
+  outline: 2px solid lightblue;
+}
+
 .make-an-appointment__input:checked + .make-an-appointment__text::before {
   background-color: #91aa59;
 }
@@ -293,7 +297,8 @@
   }
 
   .make-an-appointment__form-input {
-    padding-bottom: 13px;
+    padding-top: 5px;
+    padding-bottom: 12px;
     width: 217px;
   }
 

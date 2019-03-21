@@ -67,7 +67,7 @@
     </symbol>
   </svg>
   <header class="pilates-header" id="studio-pilates">
-    <nav class="header-nav display-none">
+    <nav class="header-nav">
       <ul class="header-nav__list">
         <li class="header-nav__item">
           <p class="pilates-logo">
@@ -97,7 +97,7 @@
         </li>
       </ul>
     </nav>
-    <section class="studio-presentation display-none">
+    <section class="studio-presentation">
       <h1 class="studio-presentation__headline">Студия Пилатеса</h1>
       <p class="studio-presentation__text">Твое здоровое тело через 10 занятий</p>
       <a class="studio-presentation__schedule" href="#schedule-and-cost">
@@ -107,7 +107,7 @@
         </svg>
       </a>
     </section>
-    <section class="anchors anchors--pilates-header-position anchors--js-class">
+    <section class="anchors anchors--pilates-header-position">
       <h2 class="visually-hidden">Навигация</h2>
       <div class="anchors__container">
         <p class="anchors__number">01</p>
@@ -373,16 +373,16 @@
           </a>
           <p class="make-an-appointment__question">Хочешь записаться на занятие?</p>
           <p class="make-an-appointment__leave-contact">Оставьте контакты и наши менеджеры свяжутся в ближайшее время</p>
-          <form class="make-an-appointment__form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="make-an-appointment__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
             <ul class="make-an-appointment__form-list">
               <li class="make-an-appointment__form-item">
-                <input class="make-an-appointment__form-input" type="tel" name="telephone" placeholder="Телефон" pattern="[0-9]{11}" required>
+                <input class="make-an-appointment__form-input tel-js" type="tel" name="telephone" placeholder="Телефон" pattern="[0-9]{11}" required>
               </li>
               <li class="make-an-appointment__form-item make-an-appointment__form-item--tablet-desktop-order">
-                <input class="make-an-appointment__form-input" type="text" name="name" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$" required>
+                <input class="make-an-appointment__form-input name-js" type="text" name="name" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$" required>
               </li>
               <li class="make-an-appointment__form-item">
-                <input class="make-an-appointment__form-input" type="email" name="e-mail" placeholder="E-mail" required>
+                <input class="make-an-appointment__form-input email-js" type="email" name="e-mail" placeholder="E-mail" required>
               </li>
             </ul>
             <div class="make-an-appointment__agreement-container">
@@ -465,7 +465,21 @@
       </section>
     </section>
     <section class="reviews" id="reviews">
-      <h2 class="reviews__headline left-dash">Отзывы пользователей</h2>
+      <h2 class="reviews__headline left-dash">Отзывы</h2>
+      <input class="review__switch-input review1 visually-hidden" type="radio" name="review__radio" id="review-1" checked>
+      <input class="review__switch-input review2 visually-hidden" type="radio" name="review__radio" id="review-2">
+      <input class="review__switch-input review3 visually-hidden" type="radio" name="review__radio" id="review-3">
+      <div class="review__switch-container">
+        <label class="review__switch-control" for="review-1">
+          <span class="visually-hidden">Переключатель отзывов</span>
+        </label>
+        <label class="review__switch-control" for="review-2">
+          <span class="visually-hidden">Переключатель отзывов</span>
+        </label>
+        <label class="review__switch-control" for="review-3">
+          <span class="visually-hidden">Переключатель отзывов</span>
+        </label>
+      </div>
       <div class="review__container">
         <div class="review__arrow-switch-container">
           <a class="review__arrow-switch-link" href="#" aria-label="Стрелка для перехода к предыдущему отзыву">
@@ -474,7 +488,7 @@
             </svg>
           </a>
         </div>
-        <section class="reviews__review-section reviews__review-section--active">
+        <section class="reviews__review-section">
           <h2 class="visually-hidden">Информация о пользователе и его отзыв</h2>
           <picture>
             <source type="image/webp" media="(min-width: 1366px)" srcset="img/img_and_webp/reviews__review-section1Photo1366px.webp 1x">
@@ -584,25 +598,6 @@
           </a>
         </div>
       </div>
-      <div class="review__switch-container">
-        <ul class="review__switch-link-list">
-          <li class="review__switch-item">
-            <a class="review__switch-link review__switch-link--active" href="#">
-              <span class="visually-hidden">Переключатель отзывов</span>
-            </a>
-          </li>
-          <li class="review__switch-item">
-            <a class="review__switch-link" href="#">
-              <span class="visually-hidden">Переключатель отзывов</span>
-            </a>
-          </li>
-          <li class="review__switch-item">
-            <a class="review__switch-link" href="#">
-              <span class="visually-hidden">Переключатель отзывов</span>
-            </a>
-          </li>
-        </ul>
-      </div>
       <section class="anchors anchors--review-position">
         <h2 class="visually-hidden">Навигация</h2>
         <div class="anchors__container">
@@ -654,11 +649,11 @@
             </li>
             <li class="contacts__communication-methods-item contacts__communication-methods-item--margin">
               <span class="contacts__communication-methods-link contacts__communication-methods-link--font contacts__communication-methods-link--tel-margin">Телефон</span>
-              <a class="contacts__communication-methods-link" href="tel:+7(918)3850607" aria-label="Номер телефона студии Пилатеса">+7 918 365 06 07</a>
+              <a class="contacts__communication-methods-link contacts__communication-methods-link--interaction-styles" href="tel:+7(918)3850607" aria-label="Номер телефона студии Пилатеса">+7 918 365 06 07</a>
             </li>
             <li class="contacts__communication-methods-item">
               <span class="contacts__communication-methods-link contacts__communication-methods-link--font contacts__communication-methods-link--mail-margin">E-mail</span>
-              <a class="contacts__communication-methods-link contacts__communication-methods-link--mail-underline" href="mailto:pilatesplus@gmail.com" aria-label="Почта студии Пилатеса">pilatesplus@gmail.com</a>
+              <a class="contacts__communication-methods-link contacts__communication-methods-link--mail-underline contacts__communication-methods-link--interaction-styles" href="mailto:pilatesplus@gmail.com" aria-label="Почта студии Пилатеса">pilatesplus@gmail.com</a>
             </li>
           </ul>
         </section>
@@ -692,10 +687,8 @@
         <p class="pilates-logo pilates-logo--width-margin">
           <picture>
             <source type="image/webp" media="(min-width: 1366px)" srcset="img/img_and_webp/pilates-logo1366px.webp 1x">
-            <source type="image/webp" media="(min-width: 764px)" srcset="img/img_and_webp/pilates-logo764px.webp 1x">
             <source type="image/webp" srcset="img/img_and_webp/pilates-logo320px.webp 1x">
             <source media="(min-width: 1366px)" srcset="img/img_and_webp/pilates-logo1366px.png 1x">
-            <source media="(min-width: 764px)" srcset="img/img_and_webp/pilates-logo-footer764px.png 1x">
             <img class="pilates-logo__img-logo pilates-logo__img-logo--margin-bottom" src="img/pilates-logo-footer320px.png" alt="Логотип Pilates">
           </picture>
           <span class="pilates-footer-logo__studio-name pilates-logo__studio-name">Pilates+</span>
@@ -732,8 +725,7 @@
       </section>
     </section>
   </footer>
-  <script src="js/javascript.js"></script>
-  <script src="js/picturefill-min.js"></script>
+  <script src="js/javascript-min.js"></script>
 </body>
 
 </html>

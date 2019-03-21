@@ -1,5 +1,9 @@
 .menu-is-open {
+  position: absolute;
+  top: 0;
+  width: $mobile-width;
   background-color: #91aa59;
+  z-index: 1;
 }
 
 .menu-is-open--display-none {
@@ -83,6 +87,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .menu-is-open {
+    width: $tablet-width;
+  }
+
   .menu-is-open__container {
     padding-top: 70px;
     padding-bottom: 105px;

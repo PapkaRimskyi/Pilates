@@ -66,6 +66,15 @@
   border-bottom: 1px solid $black-color;
 }
 
+.contacts__communication-methods-link--interaction-styles:hover {
+  color: #cccccc;
+}
+
+.contacts__communication-methods-link--interaction-styles:active {
+  color: #cccccc;
+  opacity: 0.5;
+}
+
 .contacts__map-container {
   position: relative;
 }
@@ -107,7 +116,7 @@
     position: absolute;
     left: 49px;
     margin-bottom: 0;
-    padding: 27px 42px 42px 36px;
+    padding: 29px 42px 39px 36px;
     background-color: #91aa59;
     box-shadow: 0 6px 15px 0 rgba(33, 33, 33, 0.2);
     z-index: 1;

@@ -1,5 +1,5 @@
 .social {
-  margin-bottom: 26px;
+  margin-bottom: 31px;
 }
 
 .social__list {
@@ -41,6 +41,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .social {
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+
   .social__list {
     width: 93px;
     align-items: center;
