@@ -47,6 +47,7 @@
   font-weight: 700;
   line-height: 115px;
   color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
 }
 
 .schedule-and-cost__cell--02::before {
@@ -179,6 +180,10 @@
     margin-left: 10px;
   }
 
+  .schedule-and-cost__cost-per-lesson--width {
+    width: 155px;
+  }
+
   .schedule-and-cost__cell--01::before {
     left: 40px;
   }
@@ -213,6 +218,10 @@
   .schedule-and-cost__cell:nth-child(3n + 2) {
     margin-right: 19px;
     margin-left: 18px;
+  }
+
+  .schedule-and-cost__cost-per-lesson--width {
+    width: auto;
   }
 
   .schedule-and-cost__cell--01::before,

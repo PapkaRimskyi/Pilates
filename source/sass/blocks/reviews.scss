@@ -65,6 +65,8 @@
 .review2:checked ~ .review__container .reviews__review-section:nth-of-type(2),
 .review3:checked ~ .review__container .reviews__review-section:last-of-type {
   display: flex;
+  animation-name: fade;
+  animation-duration: 0.5s;
 }
 
 .review__container {
@@ -178,6 +180,15 @@
   width: 8px;
   height: 9px;
   background-color: rgba(199, 212, 171, 1);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {

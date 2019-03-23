@@ -9,6 +9,8 @@
   border-radius: 4px;
   color: $black-color;
   z-index: 1;
+  animation-name: appearance-from-above;
+  animation-duration: 0.5s;
 }
 
 .make-an-appointment--js-display-none {
@@ -171,6 +173,18 @@
 .make-an-appointment__sign-up:active {
   opacity: 1;
   box-shadow: 0 1px 10px $black-color inset;
+}
+
+@keyframes appearance-from-above {
+  0% {
+    transform: translateX(-3000px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  90% {
+    transform: translateX(0);
+  }
 }
 
 @media (min-width: $tablet-width) {
