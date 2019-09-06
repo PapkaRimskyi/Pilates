@@ -1,18 +1,16 @@
-'use strict';
-
 (function () {
-  var makeAnAppointment = document.querySelector('.make-an-appointment');
-  var makeAnAppointmentClosePopup = document.querySelector('.make-an-appointment__close-popup');
-  var scheduleAndCostSignUp = document.querySelectorAll('.schedule-and-cost__sign-up');
-  var telJs = document.querySelector('.tel-js');
-  var eMailJs = document.querySelector('.email-js');
-  var nameJs = document.querySelector('.name-js');
-  var makeAnAppointmentForm = document.querySelector('.make-an-appointment__form');
-  var forScsUpload = 1;
+  const makeAnAppointment = document.querySelector('.make-an-appointment');
+  const makeAnAppointmentClosePopup = document.querySelector('.make-an-appointment__close-popup');
+  const scheduleAndCostSignUp = document.querySelectorAll('.schedule-and-cost__sign-up');
+  const telJs = document.querySelector('.tel-js');
+  const eMailJs = document.querySelector('.email-js');
+  const nameJs = document.querySelector('.name-js');
+  const makeAnAppointmentForm = document.querySelector('.make-an-appointment__form');
+  const forScsUpload = 1;
 
-  var classActiveArray = ['review__switch-link--active', 'reviews__review-section--active'];
+  const classActiveArray = ['review__switch-link--active', 'reviews__review-section--active'];
 
-  var closeAppointmentPopup = function (success) {
+  let closeAppointmentPopup = function (success) {
     if (success) {
       makeAnAppointmentForm.reset();
       makeAnAppointment.classList.add('make-an-appointment--js-display-none');
@@ -21,14 +19,14 @@
     }
   }
 
-  var onAppointmentPopupPressEsc = function (evt) {
-    var activeElement = document.activeElement;
+  let onAppointmentPopupPressEsc = function (evt) {
+    let activeElement = document.activeElement;
     if (evt.keyCode === window.constants.keyCode.ESC && activeElement !== telJs && activeElement !== eMailJs && activeElement !== nameJs) {
       closeAppointmentPopup();
     }
   }
 
-  var addSignUpClickHandler = function (link) {
+  let addSignUpClickHandler = function (link) {
     link.addEventListener('click', function (evt) {
       evt.preventDefault();
       makeAnAppointment.classList.remove('make-an-appointment--js-display-none');
@@ -37,7 +35,7 @@
     });
   };
 
-  for (var i = 0; i < scheduleAndCostSignUp.length; i++) {
+  for (let i = 0; i < scheduleAndCostSignUp.length; i++) {
     addSignUpClickHandler(scheduleAndCostSignUp[i]);
   };
 
@@ -47,7 +45,7 @@
     document.removeEventListener('keydown', onAppointmentPopupPressEsc);
   });
 
-  var getPopupCentered = function (elem) {
+  let getPopupCentered = function (elem) {
     elem.scrollIntoView({block: 'center', behavior: 'smooth', inline: 'center'});
   }
 
@@ -56,11 +54,11 @@
     evt.preventDefault();
   });
 
-  var successSaveFormHandler = function () {
+  let successSaveFormHandler = function () {
     closeAppointmentPopup(forScsUpload);
   }
 
-  var errorSaveFormHandler = function () {
+  let errorSaveFormHandler = function () {
     closeAppointmentPopup();
   }
 })();

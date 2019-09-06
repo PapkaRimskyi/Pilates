@@ -1,14 +1,12 @@
-'use strict';
-
 (function () {
-  var leftArrow = document.querySelector('.arrow-left-js');
-  var rightArrow = document.querySelector('.arrow-right-js');
-  var reviewSwitchInput = document.querySelectorAll('.review__switch-input');
+  let leftArrow = document.querySelector('.arrow-left-js');
+  let rightArrow = document.querySelector('.arrow-right-js');
+  let reviewSwitchInput = document.querySelectorAll('.review__switch-input');
 
-  var sliderIndex =  1;
+  let sliderIndex =  1;
 
-  var showSlider = function (n) {
-    var i;
+  let showSlider = function (n) {
+    let i;
     if (n > reviewSwitchInput.length) {
       sliderIndex = 1;
     }
@@ -18,7 +16,7 @@
     reviewSwitchInput[sliderIndex - 1].checked = true;
   }
 
-  var plusSlider = function (n) {
+  let plusSlider = function (n) {
     showSlider(sliderIndex += n);
   }
 

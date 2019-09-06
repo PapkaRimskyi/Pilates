@@ -1,11 +1,9 @@
-'use strict';
-
 (function () {
-  var URL_SAVE = 'https://echo.htmlacademy.ru';
-  var SUCCESS_STATUS_CODE = 200;
+  const URL_SAVE = 'https://echo.htmlacademy.ru';
+  const SUCCESS_STATUS_CODE = 200;
 
-  var getRequestPreparation = function (onLoad, onError) {
-    var xhr = new XMLHttpRequest();
+  let getRequestPreparation = function (onLoad, onError) {
+    let xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
 
     xhr.addEventListener('load', function () {
@@ -18,8 +16,8 @@
     return xhr;
   };
 
-  var save = function (data, onLoad, onError) {
-    var xhr = getRequestPreparation(onLoad, onError);
+  let save = function (data, onLoad, onError) {
+    let xhr = getRequestPreparation(onLoad, onError);
 
     xhr.addEventListener('error', function () {
       onError('Ошибка ' + xhr.status + ' ' + xhr.statusText);

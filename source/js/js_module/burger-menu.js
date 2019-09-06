@@ -1,19 +1,17 @@
-'use strict';
-
 (function () {
-  var pilatesHeader = document.querySelector('.pilates-header');
-  var menuIsOpen = document.querySelector('.menu-is-open');
-  var headerNavBurgerMenu = document.querySelector('.header-nav__burger-menu');
-  var menuIsOpenCloseMenu = document.querySelector('.menu-is-open__close-menu');
+  const pilatesHeader = document.querySelector('.pilates-header');
+  const menuIsOpen = document.querySelector('.menu-is-open');
+  const headerNavBurgerMenu = document.querySelector('.header-nav__burger-menu');
+  const menuIsOpenCloseMenu = document.querySelector('.menu-is-open__close-menu');
 
   menuIsOpen.classList.add('menu-is-open--display-none');
 
-  var closeHamburgerMenu = function () {
+  let closeHamburgerMenu = function () {
     pilatesHeader.classList.remove('pilates-header--js-margin-bottom');
     menuIsOpen.classList.add('menu-is-open--display-none');
   }
 
-  var onHamburgerMenuPressEsc = function (evt) {
+  let onHamburgerMenuPressEsc = function (evt) {
     if (evt.keyCode === window.constants.keyCode.ESC) {
       closeHamburgerMenu();
     }

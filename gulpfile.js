@@ -15,14 +15,26 @@ var svgo = require('svgo');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 var concat = require('gulp-concat');
+var order = require('gulp-order');
+var babel = require('gulp-babel');
+
+gulp.task('js-file-dist', function () {
+  return gulp.src('source/js/*.js')
+  .pipe(gulp.dest('docs/js'))
+});
+
+// ^For all other js-file, who isn't js_module.
 
 gulp.task('js_min', function () {
   return gulp.src('source/js/js_module/*.js')
   .pipe(concat('javascript.js'))
-  .pipe(gulp.dest('build/js'))
+  .pipe(babel({
+    presets: ['@babel/env']
+  }))
+  .pipe(gulp.dest('docs/js'))
   .pipe(uglify())
   .pipe(rename('javascript-min.js'))
-  .pipe(gulp.dest('build/js'))
+  .pipe(gulp.dest('docs/js'))
 });
 
 gulp.task('css', function () {
@@ -32,19 +44,20 @@ gulp.task('css', function () {
     .pipe(postcss([
       autoprefixer({
         cascade: false,
-        browsers: ['last 2 versions']
+        overrideBrowserslist: ['last 2 versions'],
+        grid: true
       })
     ]))
-    .pipe(gulp.dest('build/css'))
+    .pipe(gulp.dest('docs/css'))
     .pipe(csso())
     .pipe(rename('style-min.css'))
-    .pipe(gulp.dest('build/css'))
+    .pipe(gulp.dest('docs/css'))
     .pipe(server.stream());
 });
 
 gulp.task('server', function () {
   server.init({
-    server: 'build/',
+    server: 'docs/',
     notify: false,
     open: true,
     cors: true,
@@ -78,25 +91,25 @@ gulp.task('webp', function() {
 });
 
 gulp.task('clean', function () {
-  return del('build');
+  return del('docs');
 });
 
 gulp.task('copy', function () {
   return gulp.src([
     'source/fonts/**/*.{woff,woff2}',
     'source/img/**',
-    'source/js/**'
+    'source/music/**'
   ], {
     base: 'source'
   })
-  .pipe(gulp.dest('build'));
+  .pipe(gulp.dest('docs'));
 });
 
 gulp.task('html', function () {
   return gulp.src('source/*.html')
-  .pipe(gulp.dest('build'));
+  .pipe(gulp.dest('docs'));
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'html', 'css', 'js_min'));
+gulp.task('docs', gulp.series('clean', 'copy', 'html', 'css', 'js-file-dist', 'js_min'));
 
-gulp.task('start', gulp.series('build', 'server'));
+gulp.task('start', gulp.series('docs', 'server'));
